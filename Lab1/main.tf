@@ -7,7 +7,7 @@ resource "digitalocean_ssh_key" "ssh_key" {
   public_key = file("/home/czaki/.ssh/id_rsa.pub")
 }
 
-resource "digitalocean_droplet" "devops_vm_1" {
+resource "digitalocean_droplet" "devops-vm-1" {
   image = "ubuntu-20-04-x64"
   name = "devops_vm_1"
   region = "fra1"
