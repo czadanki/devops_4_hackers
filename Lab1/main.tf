@@ -9,7 +9,7 @@ resource "digitalocean_ssh_key" "ssh_key" {
 
 resource "digitalocean_droplet" "devops-vm-1" {
   image = "ubuntu-20-04-x64"
-  name = "devops_vm_1"
+  name = "devops-vm-1"
   region = "fra1"
   size = "s-1vcpu-1gb"
   tags = [digitalocean_tag.project_tag.id]
